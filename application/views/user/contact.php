@@ -1,5 +1,5 @@
 <div class="col-lg-12" style="margin-bottom: 400px">
-    <h1 class="my-4">Contact</h1>
+    <h1 class="my-4">Bukutamu</h1>
     <?= $this->session->flashdata('message'); ?>
     <form action="" method="post">
         <input type="hidden" name="nama" value="<?= $user['nama']; ?>">

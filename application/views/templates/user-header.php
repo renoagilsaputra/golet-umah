@@ -52,7 +52,7 @@
 							<?php endforeach; ?>
 						</div>
 					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('user/contact'); ?>">Contact</a>
+						<a class="nav-link" href="<?= base_url('user/contact'); ?>">Bukutamu</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"

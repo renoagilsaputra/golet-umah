@@ -33,7 +33,7 @@ class Admin extends CI_Controller {
     public function perumahan_add() {
         $this->form_validation->set_rules('nama_perumahan', 'Nama Perumahan', 'required|trim');
         $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
-        $this->form_validation->set_rules('embCed', 'Embed', 'required|trim');
+        $this->form_validation->set_rules('embed', 'Embed', 'required|trim');
         $this->form_validation->set_rules('id_user', 'Userid', 'required|trim');
 
         if($this->form_validation->run() == FALSE) {

@@ -18,7 +18,6 @@ class Auth extends CI_Controller {
             $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible fade show" role="alert">Gagal!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button></div>');
-          redirect('login');
             redirect(base_url());
         } else {
             $username = $this->input->post('username');

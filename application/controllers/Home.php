@@ -6,6 +6,13 @@ class Home extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
+        if( ($this->session->userdata('id_user')) && ($this->session->userdata('role_id') == 1)) {
+            redirect(base_url('admin'));
+        } else if(($this->session->userdata('id_user')) && ($this->session->userdata('role_id') == 2)) {
+            redirect(base_url('pemilik'));
+        } else if (($this->session->userdata('id_user')) && ($this->session->userdata('role_id') == 3)) {
+            redirect(base_url('user'));
+        }
         $this->load->model('M_Home');
         $this->load->model('M_User');
         $this->load->library('form_validation');
